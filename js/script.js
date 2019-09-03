@@ -61,7 +61,7 @@ handleMovieList = res => {
 
         if(movies.length < res['totalResults']) {
             getMoreEl.style.display = 'block';
-            getMoreEl.innerHTML = `Load ${res['totalResults'] - 10*currPage} more`;
+            getMoreEl.innerHTML = `Load more`;
         } else {
             getMoreEl.style.display = 'none';
         }
